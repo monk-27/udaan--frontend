@@ -1,0 +1,73 @@
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 80%;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  overflow: hidden;
+}
+
+.banner-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  margin-top:20px
+}
+
+.banner-price span:first-child {
+  margin-right: 1rem;
+}
+
+.banner-total {
+  font-size: 2rem;
+  font-weight: bold;
+}
+h1{
+  margin-top:0
+}
+@media (max-width: 768px) {
+  .banner-container {
+    height: auto;
+    padding: 2rem;
+    width:auto
+  }
+  .banner-price span:first-child {
+    margin-right: 1rem;
+  }
+  
+
+  .banner {
+    width: 50%;
+    height: auto;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .banner-item {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    margin-top:20px
+  }
+
+  .banner-total {
+    font-size: 3rem;
+  }
+}
